@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoring Suhu</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="dist/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navbar Normal -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Austin Nicholas Tham</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link text-light" href="#" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-plus"></i> Tambah
+                        Sensor</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <h1 class="text-center my-5">Monitoring Suhu Real-Time</h1>
+
+        <!-- Container untuk sensor -->
+        <div class="sensors">
+            <div style="border: 1px solid blue; border-top: 8px solid blue" class="sensor">
+                <h2>Sensor 1</h2>
+                <p class="temperature">0 °C</p>
+            </div>
+            
+            <div style="border: 1px solid green; border-top: 8px solid green" class="sensor">
+                <h2>Sensor 2</h2>
+                <p class="temperature">0 °C</p>
+            </div>
+            
+            <div style="border: 1px solid red; border-top: 8px solid red" class="sensor">
+                <h2>Sensor 3</h2>
+                <p class="temperature">0 °C</p>
+            </div>
+            
+            <div style="border: 1px solid yellow; border-top: 8px solid yellow" class="sensor">
+                <h2>Sensor 4</h2>
+                <p class="temperature">0 °C</p>
+            </div>
+            
+            <div style="border: 1px solid orange; border-top: 8px solid orange" class="sensor">
+                <h2>Sensor 5</h2>
+                <p class="temperature">0 °C</p>
+            </div>
+            
+            <div style="border: 1px solid purple; border-top: 8px solid purple" class="sensor">
+                <h2>Sensor 6</h2>
+                <p class="temperature">0 °C</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal untuk buat sensor baru -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Tambah Sensor Baru</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group row">
+                        <label for="sensorName" class="col-sm-4 col-form-label">Sensor Name</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="sensorName" placeholder="Sensor Name">
+                        </div>
+
+                        <label for="warnaSensor" class="col-sm-4 col-form-label">Sensor Color</label>
+                        <div class="col-sm-10">
+                            <input type="color" class="form-control" id="warnaSensor" placeholder="Color">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-outline-success add-sensor" data-dismiss="modal">Tambah Sensor</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+        integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+        integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+        crossorigin="anonymous"></script>
+    <script src="dist/js/script.js"></script>
+</body>
+
+</html>
